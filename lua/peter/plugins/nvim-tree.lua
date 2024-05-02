@@ -38,6 +38,6 @@ return {
         vim.keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse directories" })
         vim.keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" })
         vim.keymap.set("n", "<leader>ef", "<cmd>NvimTreeFocus<CR>", { desc = "Focus on file explorer" })
-        vim.keymap.set("n", "<leader>ea", "<cmd>expand_nvim_tree<CR>", { desc = "Expand all directories" })
+        --vim.keymap.set("n", "<leader>ea", "<cmd>expand_nvim_tree<CR>", { desc = "Expand all directories" })
     end
 }
