@@ -15,22 +15,22 @@ return {
         })
         require("mason-lspconfig").setup({
             ensure_installed = {
-                "asm_lsp",
-                "bashls",
-                "clangd",
-                "cssls",
-                "dockerls",
-                "docker_compose_language_service",
-                "html",
-                "hls",
-                "biome",
-                "jdtls",
-                "jinja_lsp",
+                -- "asm_lsp",
+                -- "bashls",
+                -- "clangd",
+                -- "cssls",
+                -- "dockerls",
+                -- "docker_compose_language_service",
+                -- "html",
+                -- "hls",
+                -- "biome",
+                -- "jdtls",
+                -- "jinja_lsp",
                 "lua_ls",
-                "matlab_ls",
-                "pyright",
-                "sqlls"
+                -- "matlab_ls",
+                -- "pyright",
+                -- "sqlls"
             }
         })
-    end        
+    end
 }
