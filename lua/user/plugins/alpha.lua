@@ -16,10 +16,10 @@ return {
         }
         dashboard.section.buttons.val = {
             dashboard.button("e", "> New File", "<cmd>ene<CR>"),
-            dashboard.button("SPC ee", "> Toggle File Explorer", "<cmd>NvimTreeToggle<CR>"),
-            dashboard.button("SPC ff", "> Find File", "<cmd>Telescope find_files<CR>"),
-            dashboard.button("SPC fs", "> Find String", "<cmd>Telescope live_grep<CR>"),
-            dashboard.button("SPC sr", "> Restore Session For Current Directory", "<cmd>SessionRestore<CR>"),
+            dashboard.button("_ ee", "> Toggle File Explorer", "<cmd>NvimTreeToggle<CR>"),
+            dashboard.button("_ ff", "> Find File", "<cmd>Telescope find_files<CR>"),
+            dashboard.button("_ fs", "> Find String", "<cmd>Telescope live_grep<CR>"),
+            dashboard.button("_ sr", "> Restore Session For Current Directory", "<cmd>SessionRestore<CR>"),
             dashboard.button("q", "> Quit NVIM", "<cmd>qa<CR>")
         }
         alpha.setup(dashboard.opts)

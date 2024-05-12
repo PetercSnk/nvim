@@ -26,7 +26,7 @@ return {
                 -- "biome",
                 -- "jdtls",
                 -- "jinja_lsp",
-                "lua_ls",
+                -- "lua_ls",
                 -- "matlab_ls",
                 -- "pyright",
                 -- "sqlls"

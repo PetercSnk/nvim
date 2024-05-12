@@ -1,2 +1,2 @@
-require("peter.core")
-require("peter.lazy")
+require("user.config")
+require("user.lazy")
