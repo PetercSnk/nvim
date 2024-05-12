@@ -2,10 +2,10 @@ return {
     "nvim-tree/nvim-tree.lua",
     dependencies = "nvim-tree/nvim-web-devicons",
     config = function()
-        local function expand_nvim_tree()
-            local api = require("nvim-tree.api")
-            api.tree.expand_all()
-        end
+        -- local function expand_nvim_tree()
+        --     local api = require("nvim-tree.api")
+        --     api.tree.expand_all()
+        -- end
         local nvimtree = require("nvim-tree")
         vim.g.loaded_netrw = 1
         vim.g.loaded_netrwPlugin = 1
