@@ -3,9 +3,9 @@ return {
     tag = "0.1.6",
     dependencies = {
         "nvim-lua/plenary.nvim",
-        { 
-            "nvim-telescope/telescope-fzf-native.nvim", 
-            build = "C:/Users/c1842512/Documents/WinLibs/bin/cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && C:/Users/c1842512/Documents/WinLibs/bin/cmake --build build --config Release && C:/Users/c1842512/Documents/WinLibs/bin/cmake --install build --prefix build"
+        {
+            "nvim-telescope/telescope-fzf-native.nvim",
+            build = "make"
         },
         "nvim-tree/nvim-web-devicons"
     },
