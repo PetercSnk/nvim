@@ -31,7 +31,6 @@ return {
                 "csv",
                 "haskell",
                 "java",
-                "matlab",
                 "python",
                 "regex",
                 "sql",
