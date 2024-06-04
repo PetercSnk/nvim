@@ -55,6 +55,26 @@ return {
                         }
                     }
                 })
+            end,
+            -- python config
+            ["pylsp"] = function()
+                lspconfig["pylsp"].setup({
+                    capabilities = capabilities,
+                    on_attach = on_attach,
+                    settings = {
+                        pylsp = {
+                            plugins = {
+                                pycodestyle = {
+                                    ignore = {
+                                        "E501",
+                                        "E265"
+                                    },
+                                    maxLineLength = 100
+                                }
+                            }
+                        }
+                    }
+                })
             end
         })
     end
