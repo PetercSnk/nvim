@@ -1,4 +1,4 @@
-return {
+--[[ return {
     "folke/tokyonight.nvim",
     priority = 1000,
     config = function()
@@ -10,5 +10,18 @@ return {
             end
         })
         vim.cmd("colorscheme tokyonight")
+    end
+} ]]
+return {
+    "neanias/everforest-nvim",
+    version = false,
+    lazy = false,
+    priority = 1000,
+    config = function()
+        require("everforest").setup({
+            background = "medium",
+            transparent_background_level = vim.g.transparent_enabled
+        })
+        vim.cmd([[colorscheme everforest]])
     end
 }
