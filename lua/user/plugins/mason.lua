@@ -26,7 +26,8 @@ return {
                 "jinja_lsp",
                 "lua_ls",
                 "pylsp",
-                "sqlls"
+                "sqlls",
+                "yamlls"
             }
         })
     end
