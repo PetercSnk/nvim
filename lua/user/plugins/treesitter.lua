@@ -34,7 +34,8 @@ return {
                 "python",
                 "regex",
                 "sql",
-                "asm"
+                "asm",
+                "yaml"
             },
             incremental_selection = {
                 enable = true,
