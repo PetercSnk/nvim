@@ -67,7 +67,8 @@ return {
                                 pycodestyle = {
                                     ignore = {
                                         "E501",
-                                        "E265"
+                                        "E265",
+                                        "E402"
                                     },
                                     maxLineLength = 100
                                 }
