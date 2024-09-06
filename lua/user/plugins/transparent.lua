@@ -3,8 +3,19 @@ return {
     config = function()
         require("transparent").setup({
             extra_groups = {
+                -- floating windows
                 "NormalFloat",
-                "NvimTreeNormal"
+                -- nvim-tree
+                "NvimTreeNormal",
+                -- bufferline
+                "BufferLineTabClose",
+                "BufferLineBufferSelected",
+                "BufferLineFill",
+                "BufferLineBackground",
+                "BufferLineSerparator",
+                "BufferLineIndicatorSelected",
+                -- need to find lua line elements
+                --"lualine_c_normal"
             }
         })
     end

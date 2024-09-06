@@ -30,7 +30,7 @@ return {
             opts.desc = "Show documentation"
             vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
             opts.desc = "Show signature infomation"
-            vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, opts)
+            vim.keymap.set("n", "<leader>k", vim.lsp.buf.signature_help, opts)
         end
         local capabilities = cmp_nvim_lsp.default_capabilities()
         require("mason-lspconfig").setup_handlers({

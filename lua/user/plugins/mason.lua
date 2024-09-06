@@ -23,8 +23,8 @@ return {
                 "html",
                 "biome",
                 "jdtls",
-                "jinja_lsp",
                 "lua_ls",
+                "jinja_lsp",
                 "pylsp",
                 "sqlls",
                 "yamlls"

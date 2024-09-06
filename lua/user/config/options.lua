@@ -23,3 +23,5 @@ vim.opt.clipboard:append("unnamedplus")
 -- windows
 vim.opt.splitright = true
 vim.opt.splitbelow = true
+-- scrolling
+vim.opt.ttyfast = true
