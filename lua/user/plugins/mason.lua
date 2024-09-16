@@ -27,7 +27,8 @@ return {
                 "jinja_lsp",
                 "pylsp",
                 "sqlls",
-                "yamlls"
+                "yamlls",
+                "marksman"
             }
         })
     end
