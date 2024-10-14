@@ -19,14 +19,11 @@ return {
                 "clangd",
                 "cssls",
                 "dockerls",
-                "docker_compose_language_service",
                 "html",
                 "biome",
-                "jdtls",
                 "lua_ls",
                 "jinja_lsp",
                 "pylsp",
-                "sqlls",
                 "yamlls",
                 "marksman"
             }
