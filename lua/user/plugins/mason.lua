@@ -16,16 +16,16 @@ return {
         require("mason-lspconfig").setup({
             ensure_installed = {
                 "bashls",
+                "biome",
                 "clangd",
                 "cssls",
                 "dockerls",
                 "html",
-                "biome",
-                "lua_ls",
                 "jinja_lsp",
+                "lua_ls",
+                "marksman",
                 "pylsp",
-                "yamlls",
-                "marksman"
+                "yamlls"
             }
         })
     end
