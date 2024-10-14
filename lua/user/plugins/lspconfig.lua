@@ -45,50 +45,73 @@ return {
             end
         })
         local capabilities = cmp_nvim_lsp.default_capabilities()
-        require("mason-lspconfig").setup_handlers({
-            function(server_name)
-                lspconfig[server_name].setup({
-                    capabilities = capabilities,
-                    on_attach = on_attach
-                })
-            end,
-            -- lua config
-            ["lua_ls"] = function()
-                lspconfig["lua_ls"].setup({
-                    capabilities = capabilities,
-                    on_attach = on_attach,
-                    settings = {
-                        Lua = {
-                            diagnostics = {
-                                globals = {
-                                    "vim"
-                                }
-                            }
+        -- bash
+        lspconfig["bashls"].setup({
+            capabilities = capabilities
+        })
+        -- javascript, typescript, json
+        lspconfig["biome"].setup({
+            capabilities = capabilities
+        })
+        -- c, c++
+        lspconfig["clangd"].setup({
+            cmd = {'clangd', '--background-index', '--clang-tidy', '--log=verbose'},
+            capabilities = capabilities
+        })
+        -- less, scss, css
+        lspconfig["cssls"].setup({
+            capabilities = capabilities
+        })
+        -- docker
+        lspconfig["dockerls"].setup({
+            capabilities = capabilities
+        })
+        -- html
+        lspconfig["html"].setup({
+            capabilities = capabilities
+        })
+        -- jinja, django, nunjucks
+        lspconfig["jinja_lsp"].setup({
+            capabilities = capabilities
+        })
+        -- lua
+        lspconfig["lua_ls"].setup({
+            capabilities = capabilities,
+            settings = {
+                Lua = {
+                    diagnostics = {
+                        globals = {
+                            "vim"
                         }
                     }
-                })
-            end,
-            -- python config
-            ["pylsp"] = function()
-                lspconfig["pylsp"].setup({
-                    capabilities = capabilities,
-                    on_attach = on_attach,
-                    settings = {
-                        pylsp = {
-                            plugins = {
-                                pycodestyle = {
-                                    ignore = {
-                                        "E501",
-                                        "E265",
-                                        "E402"
-                                    },
-                                    maxLineLength = 100
-                                }
-                            }
+                }
+            }
+        })
+        -- markdown
+        lspconfig["marksman"].setup({
+            capabilities = capabilities
+        })
+        -- python config
+        lspconfig["pylsp"].setup({
+            capabilities = capabilities,
+            settings = {
+                pylsp = {
+                    plugins = {
+                        pycodestyle = {
+                            ignore = {
+                                "E501",
+                                "E265",
+                                "E402"
+                            },
+                            maxLineLength = 100
                         }
                     }
-                })
-            end
+                }
+            }
+        })
+        -- yaml
+        lspconfig["yamlls"].setup({
+            capabilities = capabilities
         })
     end
 }
