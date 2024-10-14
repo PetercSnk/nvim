@@ -31,10 +31,8 @@ return {
                 "cpp",
                 "csv",
                 "haskell",
-                "java",
                 "python",
                 "regex",
-                "sql",
                 "asm",
                 "yaml"
             },
