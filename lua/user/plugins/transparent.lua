@@ -8,14 +8,14 @@ return {
                 -- nvim-tree
                 "NvimTreeNormal",
                 -- bufferline
-                "BufferLineTabClose",
-                "BufferLineBufferSelected",
+                --"BufferLineTabClose",
+                -- "BufferLineCloseButton",
+                -- "BufferLineBufferSelected",
                 "BufferLineFill",
-                "BufferLineBackground",
-                "BufferLineSerparator",
-                "BufferLineIndicatorSelected",
+                -- "BufferLineBackground",
+                -- "BufferLineSerparator",
+                -- "BufferLineIndicatorSelected",
                 -- need to find lua line elements
-                --"lualine_c_normal"
             }
         })
     end
