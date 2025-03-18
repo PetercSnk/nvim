@@ -4,7 +4,12 @@ return {
     version = "*",
     opts = {
         options = {
+            show_close_icon = false,
             mode = "tabs",
+            numbers = "ordinal",
+            indicator = {
+                style = "none"
+            },
             separator_style = "thin",
             offsets = {
                 {
