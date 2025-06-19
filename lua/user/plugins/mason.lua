@@ -21,7 +21,6 @@ return {
                 "cssls",
                 "dockerls",
                 "html",
-                "jinja_lsp",
                 "lua_ls",
                 "marksman",
                 "pylsp",

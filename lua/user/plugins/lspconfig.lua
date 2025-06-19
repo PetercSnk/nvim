@@ -70,10 +70,6 @@ return {
         lspconfig["html"].setup({
             capabilities = capabilities
         })
-        -- jinja, django, nunjucks
-        lspconfig["jinja_lsp"].setup({
-            capabilities = capabilities
-        })
         -- lua
         lspconfig["lua_ls"].setup({
             capabilities = capabilities,
